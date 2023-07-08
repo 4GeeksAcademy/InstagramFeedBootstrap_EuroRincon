@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <script src="https://kit.fontawesome.com/0d75eae967.js" crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <title>Instagram Feed w/ Bootstrap</title>
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid align-items-center">
+      <a class="navbar-brand justify-content-start" href="#">
+        <h1><i class="fa-brands fa-instagram"></i> Instagram</h1>
+      </a>
+      <div class="ms-auto">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <button type="button" class="btn btn-success me-2" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              Create a new post
+            </button>
+
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+              aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Create a new post</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+
+
+                    <form>
+                      <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">Caption:</label>
+                        <textarea class="form-control"
+                          aria-label="With textarea">Add the caption of your post here</textarea>
+                      </div>
+                      <button type="submit" class="btn btn-light border">
+                        <i class="fas fa-camera" style="color: #000000;"></i>
+                      </button>
+                      <button type="submit" class="btn btn-light border">
+                        <i class="fas fa-map-marker-alt" style="color: #000000;"></i>
+                      </button>
+                    </form>
+
+
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-success">Publish</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!--Modal end-->
+
+          </li>
+        </ul>
+      </div>
+
+      <div class="justify-content-end">
+        <ul class="navbar-nav">
+          <li class="nav-item dropdown">
+            <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown"
+              data-bs-display="static" aria-expanded="false">
+              <i class="fas fa-cog fa-lg" style="color: #ffffff;"></i>
+            </button>
+            <ul class="dropdown-menu  dropdown-menu-end">
+              <li><a class="dropdown-item" aria-current="true" href="#">Profile</a></li>
+              <li><a class="dropdown-item" aria-current="true" href="#">Accesibility</a></li>
+              <li><a class="dropdown-item" aria-current="true" href="#">Privicy and Data</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item text-danger" aria-current="true" href="#">Log out</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <nav class="nav nav-pills justify-content-center">
+
+    <a class="nav-link active m-1 text-decoration-none" href="#Grid" data-bs-toggle="tab">
+      <i class="fas fa-th fa-xl" style="color: #000000;"></i>
+    </a>
+    <a class="nav-link m-1 text-decoration-none" href="#Card" data-bs-toggle="tab">
+      <i class="fas fa-image fa-xl" style="color: #000000;"></i>
+    </a>
+  </nav>
+
+  <!-- Nav end -->
+
+
+
+  <div class="tab-content py-5">
+    <div class="tab-pane active" id="Grid">
+
+      <!-- 1 -->
+      <div class="p-3">
+        <div class="row">
+          <div class="col-4 p-2">
+            <div class="ratio ratio-1x1 mw-100 mh-100">
+              <img class="img-fluid" src="https://picsum.photos/1000" alt="">
+            </div>
+          </div>
+
+      <!-- 2 -->
+
+          <div class="col-4 p-2">
+            <div class="ratio ratio-1x1 mw-100 mh-100">
+              <img class="img-fluid" src="https://picsum.photos/1000" alt="">
+            </div>
+          </div>
+          <div class="col-4 p-2">
+            <div class="ratio ratio-1x1 mw-100 mh-100">
+              <img class="img-fluid" src="https://picsum.photos/1000" alt="">
+            </div>
+          </div>
+          <div class="col-4 p-2">
+            <div class="ratio ratio-1x1 mw-100 mh-100">
+              <img class="img-fluid" src="https://picsum.photos/1000" alt="">
+            </div>
+          </div>
+          <div class="col-4 p-2">
+            <div class="ratio ratio-1x1 mw-100 mh-100">
+              <img class="img-fluid" src="https://picsum.photos/1000" alt="">
+            </div>
+          </div>
+          <div class="col-4 p-2">
+            <div class="ratio ratio-1x1 mw-100 mh-100">
+              <img class="img-fluid" src="https://picsum.photos/1000" alt="">
+            </div>
+          </div>
+          <div class="col-4 p-2">
+            <div class="ratio ratio-1x1 mw-100 mh-100">
+              <img class="img-fluid" src="https://picsum.photos/1000" alt="">
+            </div>
+          </div>
+          <div class="col-4 p-2">
+            <div class="ratio ratio-1x1 mw-100 mh-100">
+              <img class="img-fluid" src="https://picsum.photos/1000" alt="">
+            </div>
+          </div>
+          <div class="col-4 p-2">
+            <div class="ratio ratio-1x1 mw-100 mh-100">
+              <img class="img-fluid" src="https://picsum.photos/1000" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="tab-pane" id="Card">
+      <div class="container w-50 mx-auto">
+        <div class="card border m-2">
+          <div class="card-header bg-transparent d-flex">
+
+            <!-- 1post start -->
+            <h1 class="fs-3">Euro's Pictures 1</h1>
+            <p class="fs-6 ms-auto">21/12</p>
+          </div>
+          <img class="img-fluid w-100 h-100" src="https://picsum.photos/1000" alt="x">
+          <div class="card-footer bg-transparent">
+            <p class="fw-bold">212 Likes</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi, esse tempora!</p>
+          </div>
+        </div>
+        <!-- 1post end -->
+
+        <!-- 2post start-->
+        <div class="card border m-2">
+          <div class="card-header bg-transparent d-flex">
+            <h1 class="fs-3">Euro's Pictures 2</h1>
+            <p class="fs-6 ms-auto">21/12</p>
+          </div>
+          <img class="img-fluid w-100 h-100" src="https://picsum.photos/1000" alt="x">
+          <div class="card-footer bg-transparent">
+            <p class="fw-bold">212 Likes</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi, esse tempora!</p>
+          </div>
+        </div>
+        <!-- 2post end-->
+
+        <!--3post start-->
+        <div class="card border m-2">
+          <div class="card-header bg-transparent d-flex">
+            <h1 class="fs-3">Euro's Pictures 3</h1>
+            <p class="fs-6 ms-auto">21/12</p>
+          </div>
+          <img class="img-fluid w-100 h-100" src="https://picsum.photos/1000" alt="">
+          <div class="card-footer bg-transparent">
+            <p class="fw-bold">212 Likes</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi, esse tempora!</p>
+          </div>
+        </div>
+        <!--3post end-->
+
+        <!--4post start-->
+        <div class="card border m-2">
+          <div class="card-header bg-transparent d-flex">
+            <h1 class="fs-3">Euro's Pictures 4</h1>
+            <p class="fs-6 ms-auto">21/12</p>
+          </div>
+          <img class="img-fluid w-100 h-100" src="https://picsum.photos/1000" alt="">
+          <div class="card-footer bg-transparent">
+            <p class="fw-bold">212 Likes</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi, esse tempora!</p>
+          </div>
+        </div>
+
+        <!--4post end-->
+
+        <!--5post start-->
+
+        <div class="card border m-2">
+          <div class="card-header bg-transparent d-flex">
+            <h1 class="fs-3">Euro's Pictures 5</h1>
+            <p class="fs-6 ms-auto">21/12</p>
+          </div>
+          <img class="img-fluid w-100 h-100" src="https://picsum.photos/1000" alt="">
+          <div class="card-footer bg-transparent">
+            <p class="fw-bold">212 Likes</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi, esse tempora!</p>
+          </div>
+        </div>
+
+        <!--5post end-->
+
+        <!--6post start-->
+
+        <div class="card border m-2">
+          <div class="card-header bg-transparent d-flex">
+            <h1 class="fs-3">Euro's Pictures 6</h1>
+            <p class="fs-6 ms-auto">21/12</p>
+          </div>
+          <img class="img-fluid w-100 h-100" src="https://picsum.photos/1000" alt="">
+          <div class="card-footer bg-transparent">
+            <p class="fw-bold">212 Likes</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi, esse tempora!</p>
+          </div>
+        </div>
+
+        <!--6post end-->
+
+       <!--7post start-->
+
+        <div class="card border m-2">
+          <div class="card-header bg-transparent d-flex">
+            <h1 class="fs-3">Euro's Pictures 7</h1>
+            <p class="fs-6 ms-auto">21/12</p>
+          </div>
+          <img class="img-fluid w-100 h-100" src="https://picsum.photos/1000" alt="">
+          <div class="card-footer bg-transparent">
+            <p class="fw-bold">212 Likes</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi, esse tempora!</p>
+          </div>
+        </div>
+
+        <!--7post end-->
+
+              <!--8post start-->
+
+              <div class="card border m-2">
+                <div class="card-header bg-transparent d-flex">
+                  <h1 class="fs-3">Euro's Pictures 8</h1>
+                  <p class="fs-6 ms-auto">21/12</p>
+                </div>
+                <img class="img-fluid w-100 h-100" src="https://picsum.photos/1000" alt="">
+                <div class="card-footer bg-transparent">
+                  <p class="fw-bold">212 Likes</p>
+                  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi, esse tempora!</p>
+                </div>
+              </div>
+      
+              <!--8post end-->
+
+              <!--9post start-->
+
+              <div class="card border m-2">
+                <div class="card-header bg-transparent d-flex">
+                  <h1 class="fs-3">Euro's Pictures 9</h1>
+                  <p class="fs-6 ms-auto">21/12</p>
+                </div>
+                <img class="img-fluid w-100 h-100" src="https://picsum.photos/1000" alt="">
+                <div class="card-footer bg-transparent">
+                  <p class="fw-bold">212 Likes</p>
+                  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi, esse tempora!</p>
+                </div>
+              </div>
+      
+              <!--9post end-->
+
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"></script>
+</body>
+
+</html>
